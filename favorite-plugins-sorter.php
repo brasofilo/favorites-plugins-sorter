@@ -42,6 +42,13 @@ class BL_All_Favs_Init
 			'plugins_loaded', 
 			array( B5F_All_Favorites_Ordered::get_instance(), 'plugin_setup' )
 		);
+		# PRIVATE REPO 
+		include_once 'inc/plugin-updates/plugin-update-checker.php';
+		$updateChecker = new PluginUpdateChecker(
+			'https://raw.github.com/brasofilo/favorite-plugins-sorter/master/inc/update.json',
+			__FILE__,
+			'favorite-plugins-sorter-master'
+		);
     }
 
 

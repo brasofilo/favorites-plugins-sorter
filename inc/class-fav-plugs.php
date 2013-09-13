@@ -98,13 +98,6 @@ class B5F_All_Favorites_Ordered
 		include_once( 'class-install-from-url.php' );
 		new B5F_Upload_Theme();
 
-		# PRIVATE REPO 
-		include_once 'plugin-updates/plugin-update-checker.php';
-		$updateChecker = new PluginUpdateChecker(
-			'https://raw.github.com/brasofilo/favorite-plugins-sorter/master/includes/update.json',
-			__FILE__,
-			'favorite-plugins-sorter-master'
-		);
 		
 		# RENAME GITHUB MASTER DIRECTORY
 		add_filter( 'upgrader_source_selection', array( $this, 'rename_github_zip' ), 1, 3);
