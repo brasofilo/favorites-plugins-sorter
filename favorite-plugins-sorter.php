@@ -1,12 +1,13 @@
 <?php
-/*
-  Plugin Name: Favorite Plugins & Install Via URL
-  Plugin URI:  http://wordpress.stackexchange.com/q/76643/12615
-  Description: Order and increment the number of plugins per page in the Favorites tab. Embedded http://wordpress.org/plugins/upload-theme-via-url/
-  Version:     2013.09.14
-  Author:      Rodolfo Buaiz
-  Author URI:  http://wordpress.stackexchange.com/users/12615/brasofilo
-  License:     GPL v2
+/**
+ * Plugin Name: Favorite Plugins & Install Via URL
+ * Plugin URI:  http://wordpress.stackexchange.com/q/76643/12615
+ * Description: Order and increment the number of plugins per page in the Favorites tab. Includes the plugin Install-Via-URL
+ * Version:     2013.09.14
+ * Network: true
+ * Author:      Rodolfo Buaiz
+ * Author URI:  http://wordpress.stackexchange.com/users/12615/brasofilo
+ * License:     GPL v2
  */
 
 # Busted!
