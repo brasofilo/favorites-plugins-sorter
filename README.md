@@ -5,7 +5,7 @@ Order and increment the number of plugins per page in the Favorites tab. Also al
 
 Based on the Q&A: [How to Sort the Favorite Plugins Screen Alphabetically?](http://wordpress.stackexchange.com/q/76643/12615)
 
-> When viewing the Favorite Plugins tab, `/wp-admin/plugin-install.php?tab=favorites`, the list comes unordered, is it possible to sort it from A to Z?
+> *When viewing the Favorite Plugins tab, `/wp-admin/plugin-install.php?tab=favorites`, the list comes unordered, is it possible to sort it from A to Z?*
 
 
 ![original favorites](http://i.stack.imgur.com/0DyUr.png)
