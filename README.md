@@ -14,4 +14,8 @@ Based on the Q&A: [How to Sort the Favorite Plugins Screen Alphabetically?](http
 
 ## Embedded plugin
 
-FPS has the plugin [Install Via URL](http://wordpress.org/plugins/upload-theme-via-url/) embedded into it. So, after <kbd>Favorites</kbd>, now there's a <kbd>URL</kbd> tab, to allow uploads via URL (for themes and plugins).
+FPS has the plugin [**Install Via URL**](http://wordpress.org/plugins/upload-theme-via-url/) embedded into it. So, after <kbd>Favorites</kbd>, now there's a <kbd>URL</kbd> tab, to allow uploads via URL (for themes and plugins).
+
+## Plugin updates
+
+Native WordPress updates from GitHub using [Plugin Update Checker Library](http://w-shadow.com/), by Janis Elsts.
