@@ -10,3 +10,4 @@ Based on the Q&A: [How to Sort the Favorite Plugins Screen Alphabetically?](http
 
 ![original favorites](http://i.stack.imgur.com/0DyUr.png)
 
+> *The problem is that the API doesn't offer an ordered query, so we can only sort each page results. The solution is to increase the number of items per page until no paging is necessary. The default limit is 30 plugins.*
