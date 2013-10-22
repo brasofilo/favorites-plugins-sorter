@@ -16,6 +16,11 @@ settings_errors('plugin_group');
 jQuery(document).ready( function($){ /* Toggle settings */
     $('#fps-pluginconflink').click(function(e) { 
         e.preventDefault(); 
+        
+        if( $('#fps_config_row').is(':visible') )
+            $(this).text('<?php _e( 'Open' ); ?>');
+        else
+            $(this).text('<?php _e( 'Close' ); ?>');
         $('#fps_config_row').slideToggle(); 
     });
 });
