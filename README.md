@@ -13,7 +13,7 @@
 >![plugins screen](assets/screenshot-3.png)
 
 ## Acknowledgments
-###Based on WPSE post
+###Based on a WPSE post
 >####[**How to Sort the Favorites Plugins Screen Alphabetically?**](http://wordpress.stackexchange.com/q/76643/12615)
 
 >> *When viewing the Favorites Plugins tab, `/wp-admin/plugin-install.php?tab=favorites`, 
