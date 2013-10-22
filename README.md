@@ -1,7 +1,7 @@
-# [Favorites Plugins Sorter & Upload via URL](https://github.com/brasofilo/favorites-plugins-sorter)
-<sup>*Version 2013.10.22*</sup>
+# [Favorites Sorter & Upload via URL](https://github.com/brasofilo/favorites-plugins-sorter)
+<sup>*WordPress Plugin - Version 2013.10.22*</sup>
 
-####*Order and increment the number of plugins per page in the Favorites tab*
+###*Order and increment the number of plugins per page in Favorites tab*
 
 ####Viewing lots of items, with extra details and sorted by name
 >![plugins screen](assets/screenshot-1.png)
