@@ -1,0 +1,45 @@
+#fps_config_row td,
+#fps_config_row th{
+    padding: 5px;
+    border-width: 0;
+}
+
+#fps_config_row {
+    padding: 10px;
+    display: none;
+}
+
+#fps_config_tr, #fps_config_tr td {
+    padding: 0;
+}
+
+#fps_config_tr th {
+    font-family: inherit;
+    color: dimgray
+}
+
+#fps_config_row {
+    margin: 10px 15px 20px 12px;
+    padding: 12px;
+    -moz-box-shadow: -3px 3px 5px 3px #E4E4E4;
+    -webkit-box-shadow: -3px 3px 5px 3px #E4E4E4;
+    box-shadow: -3px 3px 5px 3px #E4E4E4;
+}
+
+#fps-tr-settings th, 
+#fps-tr-settings td,
+#fps_config_tr th, 
+#fps_config_tr td 
+{
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-bottom: 8px
+}
+
+#favorites-plugins-install-via-url td,
+#favorites-plugins-install-via-url th {
+border-bottom: 0px;
+-webkit-box-shadow: none;
+box-shadow: none;
+}

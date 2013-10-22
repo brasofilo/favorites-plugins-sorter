@@ -1,8 +1,8 @@
 {
-    "name" : "Favorite Plugins Sorter",
+    "name" : "Favorites Plugins Sorter",
     "slug" : "favorite-plugins-sorter-master",
     "download_url" : "https://github.com/brasofilo/favorite-plugins-sorter/archive/master.zip",
-    "version" : "2013.09.14",
+    "version" : "2013.10.22",
     "author" : "Rodolfo Buaiz",
     "author_homepage" : "http://stackexchange.com/users/1211516?tab=accounts",
     "homepage" : "http://brasofilo.com",
@@ -12,5 +12,5 @@
         "changelog" : "<p><ul><li><strong>v</strong><p></p></li></ul>"
     },
     "upgrade_notice" : "",
-    "last_updated" : "2013-09-14"
+    "last_updated" : "2013-10-22"
 }

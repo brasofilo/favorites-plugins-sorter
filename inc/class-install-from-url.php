@@ -117,6 +117,7 @@ class B5F_Upload_Theme
 		check_admin_referer( 'plugin-url-upload' );
 		$this->url = $url = $_POST['pluginurl'];
 		
+        ### NOT DISABLED ON LIVE SERVER
 		if( self::compareExt( $url ) )
 			self::uploadPlguinFile();
 		else
@@ -126,19 +127,12 @@ class B5F_Upload_Theme
 
 	function compareExt( $url )
 	{
-		$extension = self::getMime( $url );
-		if( $extension == 'application/zip' )
+        $parse = parse_url( $url );
+        $base = pathinfo( $parse['path'] );
+		if( 'zip' == $base['extension'] )
 			return true;
-		else
-			return false;
-	}
-
-
-	function getMime( $url )
-	{		
-		$file = file_get_contents( $url ); //get file from url		
-		$finfoObject = new finfo( FILEINFO_MIME_TYPE ); //create finfo object with FILEINFO_MIME_TYPE as argument
-		return $finfoObject->buffer( $file ); //return mime header
+        
+        return false;
 	}
 
 
