@@ -38,6 +38,9 @@ to allow uploads via URL (for themes and plugins).
 ### Plugin updates
 Native WordPress updates from GitHub using [***YahnisElsts / plugin-update-checker***](https://github.com/YahnisElsts/plugin-update-checker).
 
+###Plugin settings 
+Idea plugged from [WP Maintenance Mode](http://wordpress.org/plugins/wp-maintenance-mode/).
+
 ##Credits
 This plugin is built and maintained by [Rodolfo Buaiz](http://brasofilo.com), aka brasofilo.
 
