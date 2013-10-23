@@ -12,6 +12,10 @@
 ####Plugin settings
 >![plugins screen](assets/screenshot-3.png)
 
+##Related plugins
+ - [My Own Plugins Tab](https://github.com/brasofilo/My-Own-Plugins-Tab)
+ - [Network Only Plugins Tab](http://wordpress.org/plugins/network-only-plugins-tab/)
+
 ## Acknowledgments
 ###Based on a WPSE post
 >####[**How to Sort the Favorites Plugins Screen Alphabetically?**](http://wordpress.stackexchange.com/q/76643/12615)
