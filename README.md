@@ -1,5 +1,5 @@
 # [Favorites Sorter & Upload via URL](https://github.com/brasofilo/favorites-plugins-sorter)
-<sup>*WordPress Plugin - Version 2013.10.22*</sup>
+<sup>*WordPress Plugin - Version 2013.10.23*</sup>
 
 ###*Order and increment the plugins per page in Favorites tab*
 

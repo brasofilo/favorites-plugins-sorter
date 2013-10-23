@@ -10,8 +10,13 @@
         "<pre>Hi there! I'm just part of a plugin, 
             <h1>&iquest;what exactly are you looking for?" );
 
-settings_errors('plugin_group'); 
-?>
+$value = $this->option_value; 
+
+if( $this->posted_data ): ?>
+<div id="setting-error-settings_updated" class="updated settings-error"> 
+<p><strong>FPS: Settings saved.</strong></p></div>
+<?php endif; ?>
+
 <script type="text/javascript">
 jQuery(document).ready( function($){ /* Toggle settings */
     $('#fps-pluginconflink').click(function(e) { 
@@ -26,7 +31,7 @@ jQuery(document).ready( function($){ /* Toggle settings */
 });
 </script>
 
-<tr id="fps-tr-settings" class="<?php echo $class_active; ?>">
+<tr id="fps-tr-settings" class="active">
     
     <th scope="row" class="check-column"><a name="fps-settings">&nbsp;</a></th>
     <td colspan="2">
@@ -35,14 +40,13 @@ jQuery(document).ready( function($){ /* Toggle settings */
     
 </tr>
 
-
 <tr id="fps_config_tr" class="<?php echo $class_active; ?>">
     <td colspan="3">
-    <div id="fps_config_row" class="<?php echo $config_row_class; ?>">
+    <div id="fps_config_row" class="config_hidden">
 
-                <form method="post" name="post-mopt-form" action="">
+        <form method="post" name="post-fps-form" action="">
  
-            <table class="form-table mopt-table">                
+            <table class="form-table fps-table">                
             <?php 
             $this->fields( array(
                     'id' => 'per_page',
@@ -94,14 +98,19 @@ jQuery(document).ready( function($){ /* Toggle settings */
                 )
             );
             ?>
+            <tr valign='top'>
+                <th scope='row'>
+                    <p id="fps-submitbutton">
+                    <?php
+                      wp_nonce_field( plugin_basename( B5F_FPS_FILE ), 'noncename_fps' );
+                      submit_button( 'Save settings', 'primary', 'fps_config_submit' );  ?>
+                    </p>
+                    
+                </th>
+                <td></td>
+            </tr>
             </table>
         </form>
-        <br />
-        <p id="submitbutton">
-        <?php
-          wp_nonce_field( plugin_basename( B5F_FPS_FILE ), 'noncename_fps' );
-          submit_button( 'Save settings', 'primary', 'fps_config_submit' );  ?>
-        </p>
     </div>
     </td>
 </tr>

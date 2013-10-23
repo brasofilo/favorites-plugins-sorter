@@ -3,7 +3,7 @@
  * Plugin Name: Favorites Plugins & Install Via URL
  * Plugin URI:  http://wordpress.stackexchange.com/q/76643/12615
  * Description: Order and increment the number of plugins per page in the Favorites tab. Includes the plugin Install-Via-URL
- * Version:     2013.10.22
+ * Version:     2013.10.23
  * Network: true
  * Author:      Rodolfo Buaiz
  * Author URI:  http://wordpress.stackexchange.com/users/12615/brasofilo

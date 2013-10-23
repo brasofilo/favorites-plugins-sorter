@@ -153,7 +153,7 @@ class B5F_Favorites_Plugins_Sorter
             'user' => 'brasofilo',
             'plugin_file' => B5F_FPS_FILE,
             'donate_text' => 'Buy me a beer',
-            'donate_icon' => "<span  class='mopt-icon'>$icon </span>",
+            'donate_icon' => "<span  class='fps-icon'>$icon </span>",
             'donate_link' => 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JNJXKWBYM9JP6&lc=US&item_name=Rodolfo%20Buaiz&item_number=Plugin%20donation&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted'
         ));	
    }

@@ -27,19 +27,34 @@
 }
 
 #fps-tr-settings th, 
-#fps-tr-settings td,
-#fps_config_tr th, 
-#fps_config_tr td 
-{
+#fps-tr-settings td
+ {
     border-bottom: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding-bottom: 8px
+}
+
+#fps-tr-settings th {
+    padding: 0 0 8px;
+}
+#fps-tr-settings td {
+    padding: 0;
 }
 
 #favorites-plugins-install-via-url td,
 #favorites-plugins-install-via-url th {
-border-bottom: 0px;
--webkit-box-shadow: none;
-box-shadow: none;
+    border-bottom: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+table.fps-table th,
+table.fps-table td {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+    vertical-align: middle;
+    border-bottom: 0;
+    webkit-box-shadow: none !important;
+    box-shadow: none !important
 }

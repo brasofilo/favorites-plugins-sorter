@@ -33,6 +33,13 @@ class B5F_FPS_Settings
         , 'highlight' 
     );
 
+    /** 
+     * Controls the visibility of "Settings Updated"
+     * 
+     * @var boolean
+     */
+    private $posted_data;
+    
     /**
      *
      * @see plugin_setup()
@@ -67,10 +74,8 @@ class B5F_FPS_Settings
      */
     public function check_posted_data()
     {
-        if( 
-            !isset( $_POST['noncename_fps'] ) 
-            || ( isset( $_POST['action'] ) && 'update' == $_POST['action'] )
-            )
+        $this->posted_data = false;
+        if( !isset( $_POST['noncename_fps'] ) )
             return;
         
         if( wp_verify_nonce( $_POST['noncename_fps'], plugin_basename( B5F_FPS_FILE ) ) )
@@ -79,12 +84,10 @@ class B5F_FPS_Settings
             foreach( $this->opt_values as $val )
                 if ( isset($_POST[$this->option_name][$val]) )
                     $return[$val] = esc_sql( $_POST[$this->option_name][$val] );
-            add_settings_error('plugin_group', 'plugin_active', 'Settings updated.', 'updated');
             $this->option_value = $return;
             $this->set_options();
+            $this->posted_data = true;
         }
-        else
-            add_settings_error('plugin_group', 'plugin_active', 'Nonce error.', 'error');
     }
     
     
@@ -131,8 +134,8 @@ class B5F_FPS_Settings
     public function enqueue()
     {
         wp_enqueue_style(
-            'mopt-style', 
-            plugin_dir_url( B5F_FPS_FILE ) . 'css/afs.css'
+            'fps-style', 
+            plugin_dir_url( B5F_FPS_FILE ) . "css/fps.css"
         );
     }
     
@@ -148,10 +151,6 @@ class B5F_FPS_Settings
      */
     public function add_config_form()
     {
-        $value = $this->option_value;   
-        # Prevent wrong background if these conditions are met
-        $class_active = is_plugin_active( B5F_FPS_FILE ) ? 'active' : 'inactive';
-        $config_row_class = 'config_hidden';
         require_once 'html-fps-settings.php';
     }
 
